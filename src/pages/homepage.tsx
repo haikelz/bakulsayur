@@ -64,7 +64,7 @@ export default function Home() {
               <p className="mt-4 text-platinum">Harga Terjangkau</p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <img src="/images/natural-food.svg" alt="image" />
+              <img src="/images/leaf.svg" alt="image" />
               <p className=" mt-4 text-platinum">Higienis</p>
             </div>
             <div className="flex flex-col justify-center items-center">

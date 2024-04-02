@@ -12,11 +12,15 @@ Due to a short deadline, for now this Website is not responsive, only for PC/Lap
 - Docker
 - Cloudflare Pages
 
+## Screenshots
+
 **Docker Log**
 
 ![](/public/docs/Screenshot%20from%202024-04-01%2017-54-23.png)
 
 ![](/public/docs/Screenshot%20from%202024-04-01%2017-54-29.png)
+
+For other screenshots, you can see in folder `/public/docs`.
 
 ## Getting Started
 

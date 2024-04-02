@@ -4,6 +4,7 @@ import Footer from "../../../components/footer";
 import Header from "../../../components/header";
 import ProtectedRoute from "../../../components/protected-route";
 import { useTitle } from "../../../hooks";
+import Breadcrumbs from "../../../components/breadcrumbs";
 
 export default function TambahProduk() {
   const [isLoggedIn] = useState<string>(
@@ -26,13 +27,7 @@ export default function TambahProduk() {
       <Header />
       <main className="w-full flex justify-center items-center mt-28 pb-14 flex-col">
         <section className="flex flex-col justify-start items-start max-w-7xl w-full">
-          <div className="flex justify-center items-center w-fit space-x-5 font-semibold">
-            <span className="text-semiMedium font-semibold">Home</span>
-            <img src="/images/arrow-right.svg" alt="arrow right" />
-            <span className="text-semiMedium font-semibold">Profil</span>
-            <img src="/images/arrow-right.svg" alt="arrow right" />
-            <span className="text-semiMedium font-semibold">Tambah Produk</span>
-          </div>
+          <Breadcrumbs />
           <div className="mt-16 w-full flex justify-between">
             <div className="flex flex-col justify-start items-start space-y-10">
               <ul className="space-y-4">
@@ -59,19 +54,23 @@ export default function TambahProduk() {
                   src="/images/tambahkan-gambar.png"
                   alt="tambahkan gambar"
                 />
-                <p className="font-semibold mt-4 mb-8">Tambahkan Gambar</p>
+                <p className="font-semibold mt-4 mb-8 text-platinum">
+                  Tambahkan Gambar
+                </p>
               </div>
             </div>
             <form onSubmit={handleSubmit} className="h-fit">
               <div className="h-full bg-yellowGreenColorWheel rounded-2xl px-10 w-[840px] pt-8 pb-24">
                 <div className="space-y-5">
                   <div className="space-y-3">
-                    <h4 className="font-semibold text-normal ">
+                    <h4 className="font-semibold text-normal  text-platinum">
                       Informasi Produk
                     </h4>
                     <div className="flex justify-between items-start space-x-10">
                       <div className="border border-black rounded-lg px-4 py-3 w-full max-w-[182px]">
-                        <p className="text-small font-normal">Nama Produk</p>
+                        <p className="text-small font-normal text-platinum">
+                          Nama Produk
+                        </p>
                       </div>
                       <input
                         required
@@ -83,7 +82,9 @@ export default function TambahProduk() {
                     </div>
                     <div className="flex justify-between items-start space-x-10">
                       <div className="border border-black rounded-lg px-4 py-3 w-full max-w-[182px]">
-                        <p className="text-small font-normal">Jumlah Produk</p>
+                        <p className="text-small font-normal text-platinum">
+                          Jumlah Produk
+                        </p>
                       </div>
                       <input
                         required
@@ -95,10 +96,14 @@ export default function TambahProduk() {
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <h4 className="font-semibold text-normal ">Spesifikasi</h4>
+                    <h4 className="font-semibold text-normal  text-platinum">
+                      Spesifikasi
+                    </h4>
                     <div className="flex justify-between items-start space-x-10">
                       <div className="border border-black rounded-lg px-4 py-3 w-full max-w-[182px]">
-                        <p className="text-small font-normal">Deskripsi</p>
+                        <p className="text-small font-normal text-platinum">
+                          Deskripsi
+                        </p>
                       </div>
                       <textarea
                         required
@@ -108,12 +113,14 @@ export default function TambahProduk() {
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <h4 className="font-semibold text-normal ">
+                    <h4 className="font-semibold text-normal text-platinum">
                       Informasi Penjualan
                     </h4>
                     <div className="flex justify-between items-start space-x-10">
                       <div className="border border-black rounded-lg px-4 py-3 w-full max-w-[182px]">
-                        <p className="text-small font-normal">Harga Produk</p>
+                        <p className="text-small font-normal text-platinum">
+                          Harga Produk
+                        </p>
                       </div>
                       <input
                         required
@@ -125,7 +132,9 @@ export default function TambahProduk() {
                     </div>
                     <div className="flex justify-between items-start space-x-10">
                       <div className="border border-black rounded-lg px-4 py-3 w-full max-w-[182px]">
-                        <p className="text-small font-normal">Minimal Order</p>
+                        <p className="text-small font-normal text-platinum">
+                          Minimal Order
+                        </p>
                       </div>
                       <input
                         required
